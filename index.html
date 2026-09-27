@@ -206,10 +206,12 @@ section{padding:6rem 2.5rem;position:relative}
 /* 制作実績 */
 .works-sec{background:var(--paper)}
 .works-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.2rem;margin-top:2.5rem}
-.work-card{background:var(--paper-deep);border:1px solid var(--mist);padding:1.3rem 1.4rem;transition:transform .2s,box-shadow .2s}
+.work-card{position:relative;background:var(--paper-deep);border:1px solid var(--mist);padding:1.3rem 1.4rem;transition:transform .2s,box-shadow .2s}
 .work-card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(36,27,16,.1)}
 .work-cat{font-size:.66rem;color:var(--hanko);font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.4rem}
 .work-name{font-size:.95rem;font-weight:700;color:var(--ink);margin-bottom:.7rem}
+.work-badge{position:absolute;top:1rem;right:1rem;font-size:.62rem;font-weight:700;letter-spacing:.06em;color:var(--wood);border:1px solid var(--wood);padding:0 .5rem;border-radius:2px;line-height:1.7}
+.work-card:has(.work-badge) .work-cat{padding-right:5.5rem}
 .work-link{font-size:.78rem;color:var(--wood);font-weight:700;border-bottom:1px solid var(--wood)}
 .work-link:hover{color:var(--hanko);border-color:var(--hanko)}
 
@@ -476,21 +478,21 @@ footer{background:var(--ink);color:rgba(255,255,255,.55);padding:3.5rem 2.5rem 2
   <div class="container">
   <div class="sec-head reveal">
     <span class="sec-eyebrow">Our Works</span>
-    <h2 class="sec-title">制作実績</h2>
-    <p class="sec-desc">北海道の事業者様のホームページを制作してきた実績の一部をご紹介します。</p>
+    <h2 class="sec-title">制作実績・制作サンプル</h2>
+    <p class="sec-desc">実際に制作したサイトと、業種別の制作サンプルをご紹介します。「制作サンプル」の表示があるものは、架空のお店を想定して作ったデモサイトです。</p>
   </div>
   <div class="works-grid reveal stagger">
-    <div class="work-card"><div class="work-cat">整骨院・接骨院</div><div class="work-name">さくら整骨院</div><a href="https://kouyamakeiichi-arch.github.io/seikotsuin/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
-    <div class="work-card"><div class="work-cat">美容室・サロン</div><div class="work-name">Hair Salon LUCE</div><a href="https://kouyamakeiichi-arch.github.io/salon/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
-    <div class="work-card"><div class="work-cat">学習塾・個別指導</div><div class="work-name">個別指導塾 スタディ</div><a href="https://kouyamakeiichi-arch.github.io/juku/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
+    <div class="work-card"><div class="work-cat">整骨院・接骨院</div><div class="work-name">さくら整骨院</div><span class="work-badge">制作サンプル</span><a href="https://kouyamakeiichi-arch.github.io/seikotsuin/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
+    <div class="work-card"><div class="work-cat">美容室・サロン</div><div class="work-name">Hair Salon LUCE</div><span class="work-badge">制作サンプル</span><a href="https://kouyamakeiichi-arch.github.io/salon/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
+    <div class="work-card"><div class="work-cat">学習塾・個別指導</div><div class="work-name">個別指導塾 スタディ</div><span class="work-badge">制作サンプル</span><a href="https://kouyamakeiichi-arch.github.io/juku/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
     <div class="work-card"><div class="work-cat">建設・土木・解体</div><div class="work-name">KOUYAMA METAL WORKS</div><a href="https://kouyamakeiichi-arch.github.io/-KOUYAMA-METAL-WORKS/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
     <div class="work-card"><div class="work-cat">建設・土木・解体</div><div class="work-name">有限会社神山工業</div><a href="https://kouyamakeiichi-arch.github.io/steel-beam/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
-    <div class="work-card"><div class="work-cat">飲食店・カフェ・居酒屋</div><div class="work-name">炭火焼肉 和牛苑</div><a href="https://kouyamakeiichi-arch.github.io/Yakiniku-Restaurant-/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
-    <div class="work-card"><div class="work-cat">飲食店・カフェ・居酒屋</div><div class="work-name">炭火焼鳥 鶏一</div><a href="https://kouyamakeiichi-arch.github.io/Yakitori-Restaurant/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
-    <div class="work-card"><div class="work-cat">飲食店・カフェ・居酒屋</div><div class="work-name">鮨　蒼海</div><a href="https://kouyamakeiichi-arch.github.io/Sushi-Restaurant/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
-    <div class="work-card"><div class="work-cat">農家・農業法人</div><div class="work-name">有限会社 山田農場</div><a href="https://kouyamakeiichi-arch.github.io/agriculture/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
-    <div class="work-card"><div class="work-cat">ペットサロン</div><div class="work-name">Dog &amp; Cat Salon HANA</div><a href="https://kouyamakeiichi-arch.github.io/pet-grooming-salon/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
-    <div class="work-card"><div class="work-cat">税理士・会計事務所</div><div class="work-name">山田税理士事務所</div><a href="https://kouyamakeiichi-arch.github.io/tax-accounting-firm/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
+    <div class="work-card"><div class="work-cat">飲食店・カフェ・居酒屋</div><div class="work-name">炭火焼肉 和牛苑</div><span class="work-badge">制作サンプル</span><a href="https://kouyamakeiichi-arch.github.io/Yakiniku-Restaurant-/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
+    <div class="work-card"><div class="work-cat">飲食店・カフェ・居酒屋</div><div class="work-name">炭火焼鳥 鶏一</div><span class="work-badge">制作サンプル</span><a href="https://kouyamakeiichi-arch.github.io/Yakitori-Restaurant/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
+    <div class="work-card"><div class="work-cat">飲食店・カフェ・居酒屋</div><div class="work-name">鮨　蒼海</div><span class="work-badge">制作サンプル</span><a href="https://kouyamakeiichi-arch.github.io/Sushi-Restaurant/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
+    <div class="work-card"><div class="work-cat">農家・農業法人</div><div class="work-name">有限会社 山田農場</div><span class="work-badge">制作サンプル</span><a href="https://kouyamakeiichi-arch.github.io/agriculture/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
+    <div class="work-card"><div class="work-cat">ペットサロン</div><div class="work-name">Dog &amp; Cat Salon HANA</div><span class="work-badge">制作サンプル</span><a href="https://kouyamakeiichi-arch.github.io/pet-grooming-salon/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
+    <div class="work-card"><div class="work-cat">税理士・会計事務所</div><div class="work-name">山田税理士事務所</div><span class="work-badge">制作サンプル</span><a href="https://kouyamakeiichi-arch.github.io/tax-accounting-firm/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
     <div class="work-card"><div class="work-cat">その他</div><div class="work-name">store_wallet</div><a href="https://kouyamakeiichi-arch.github.io/store_wallet/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
     <div class="work-card"><div class="work-cat">その他</div><div class="work-name">in‑store currency</div><a href="https://kouyamakeiichi-arch.github.io/in-store-currency/" target="_blank" rel="noopener" class="work-link">サイトを見る →</a></div>
   </div>
